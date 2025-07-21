@@ -1,0 +1,26 @@
+<div class="card">
+  <div class="card-header">
+    {{ title }}
+  </div>
+  <div class="card-body">
+    <table class="table mx-auto">
+      <thead>
+        <tr>
+          <th>Car Type</th>
+          <th>Rental Count</th>
+          <th>Utilization (%)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of rows">
+          <td>{{ item.carType }}</td>
+          <td>{{ item.rentalCount }}</td>
+          <td>{{ item.utilizationPercentage }}</td>
+        </tr>
+        <tr *ngIf="rows.length === 0">
+          <td colspan="3" class="text-center">No data available</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

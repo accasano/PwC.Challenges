@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="row">
+    <div class="col p-3">
+      <h1 class="">Dashboard</h1>
+    </div>
+    <div class="col p-3">
+      <div class="float-end">
+        <a href="#" class="btn btn-primary" (click)="logout()">Logout</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col p-3">
+        <app-most-rented-type
+          [title]="'Most Rented Car Type'"
+        ></app-most-rented-type>
+      </div>
+      <div class="col p-3">
+        <app-most-rented-type-rankings
+          [title]="'Top 3 Car Types'"
+        ></app-most-rented-type-rankings>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col p-3">
+        <app-most-used-cars [title]="'Top Used Cars'"></app-most-used-cars>
+      </div>
+      <div class="col p-3">
+        <app-most-used-cars-by-details
+          [title]="'Most Used by Brand, Model & Type'"
+        ></app-most-used-cars-by-details>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col p-3 text-center">
+        <app-daily-activity-graph
+          [title]="'Last 7 Days Statistics'"
+        ></app-daily-activity-graph>
+      </div>
+    </div>
+  </div>
+</div>

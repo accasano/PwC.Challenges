@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36301.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PwC.CarRental.Api", "src\PwC.CarRental.Api\PwC.CarRental.Api.csproj", "{D46AD98E-C70D-46D9-9334-5CD10B528446}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PwC.CarRental.Application", "src\PwC.CarRental.Application\PwC.CarRental.Application.csproj", "{D65E8D4E-0B44-46AC-B163-A57AA209C72E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PwC.CarRental.Domain", "src\PwC.CarRental.Domain\PwC.CarRental.Domain.csproj", "{835869D8-084E-49CD-9A46-E62220C61640}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PwC.CarRental.Infrastructure", "src\PwC.CarRental.Infrastructure\PwC.CarRental.Infrastructure.csproj", "{5AEA2E00-8AD0-45A7-9F79-70A419CEBF5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PwC.CarRental.UnitTests", "tests\PwC.CarRental.UnitTests\PwC.CarRental.UnitTests.csproj", "{3A8EC956-7AF1-4F19-AD05-1DEC32840A18}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PwC.CarRental.EmailFunction", "src\PwC.CarRental.EmailFunction\PwC.CarRental.EmailFunction.csproj", "{2097A560-1030-4662-AF05-0B3B2CB58BEB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D46AD98E-C70D-46D9-9334-5CD10B528446}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D46AD98E-C70D-46D9-9334-5CD10B528446}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D46AD98E-C70D-46D9-9334-5CD10B528446}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D46AD98E-C70D-46D9-9334-5CD10B528446}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D65E8D4E-0B44-46AC-B163-A57AA209C72E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D65E8D4E-0B44-46AC-B163-A57AA209C72E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D65E8D4E-0B44-46AC-B163-A57AA209C72E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D65E8D4E-0B44-46AC-B163-A57AA209C72E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{835869D8-084E-49CD-9A46-E62220C61640}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{835869D8-084E-49CD-9A46-E62220C61640}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{835869D8-084E-49CD-9A46-E62220C61640}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{835869D8-084E-49CD-9A46-E62220C61640}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AEA2E00-8AD0-45A7-9F79-70A419CEBF5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AEA2E00-8AD0-45A7-9F79-70A419CEBF5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AEA2E00-8AD0-45A7-9F79-70A419CEBF5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AEA2E00-8AD0-45A7-9F79-70A419CEBF5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A8EC956-7AF1-4F19-AD05-1DEC32840A18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A8EC956-7AF1-4F19-AD05-1DEC32840A18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A8EC956-7AF1-4F19-AD05-1DEC32840A18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A8EC956-7AF1-4F19-AD05-1DEC32840A18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2097A560-1030-4662-AF05-0B3B2CB58BEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2097A560-1030-4662-AF05-0B3B2CB58BEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2097A560-1030-4662-AF05-0B3B2CB58BEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2097A560-1030-4662-AF05-0B3B2CB58BEB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3A8EC956-7AF1-4F19-AD05-1DEC32840A18} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7AAED44A-56A1-42EE-B93F-F48A8C6406FC}
+	EndGlobalSection
+EndGlobal

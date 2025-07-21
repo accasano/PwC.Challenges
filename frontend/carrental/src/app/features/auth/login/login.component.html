@@ -1,0 +1,52 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <h2 class="text-center mb-4">Login</h2>
+      <form #loginForm="ngForm" (ngSubmit)="onLogin()">
+        <div class="form-group mb-3">
+          <input
+            type="text"
+            id="username"
+            class="form-control"
+            placeholder="Username"
+            required
+            [(ngModel)]="username"
+            name="username"
+            #usernameInput="ngModel"
+          />
+          <div *ngIf="usernameInput.invalid && usernameInput.touched" class="text-danger">
+            Username is required.
+          </div>
+        </div>
+
+        <div class="form-group mb-3">
+          <input
+            type="password"
+            id="password"
+            class="form-control"
+            placeholder="Password"
+            required
+            [(ngModel)]="password"
+            name="password"
+            #passwordInput="ngModel"
+          />
+          <div *ngIf="passwordInput.invalid && passwordInput.touched" class="text-danger">
+            Password is required.
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100" [disabled]="loginForm.invalid">
+          Login
+        </button>
+
+        <div *ngIf="loginFailed" class="alert alert-danger mt-3">
+          Invalid credentials. Try again.
+        </div>
+      </form>
+
+      <div class="text-center mt-3">
+        <a routerLink="/register">Don't have an account? Register here</a>
+      </div>
+    </div>
+  </div>
+</div>

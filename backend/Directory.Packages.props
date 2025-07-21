@@ -1,0 +1,66 @@
+<Project>
+	<PropertyGroup>
+		<!-- Suppress NU1507: There are 2 package sources defined in your configuration. When using central package management, please map your package sources with package source mapping or specify a single package source. -->
+		<NoWarn>$(NoWarn);NU1507</NoWarn>
+	</PropertyGroup>
+	<PropertyGroup>
+		<ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageVersion Include="FluentValidation" Version="12.0.0" />
+		<PackageVersion Include="FluentValidation.DependencyInjectionExtensions" Version="12.0.0" />
+		<PackageVersion Include="MediatR" Version="13.0.0" />
+		<PackageVersion Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+		<PackageVersion Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.7" />
+		<PackageVersion Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="9.0.7" />
+		<PackageVersion Include="Microsoft.AspNetCore.OpenApi" Version="9.0.7" />
+		<PackageVersion Include="Microsoft.EntityFrameworkCore" Version="9.0.7" />
+		<PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.7">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageVersion>
+		<PackageVersion Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.7" />
+		<PackageVersion Include="Microsoft.Extensions.Caching.Memory" Version="9.0.7" />
+		<PackageVersion Include="Microsoft.IdentityModel.Tokens" Version="8.12.1" />
+		<PackageVersion Include="Swashbuckle.AspNetCore" Version="9.0.3" />
+		<PackageVersion Include="System.IdentityModel.Tokens.Jwt" Version="8.12.1" />
+		<PackageVersion Include="System.Net.Http" Version="4.3.4" />
+		<PackageVersion Include="System.Text.RegularExpressions" Version="4.3.1" />
+	</ItemGroup>
+
+	<!-- Functions -->
+	<ItemGroup>
+		<PackageVersion Include="Azure.Storage.Queues" Version="12.23.0" />
+		<PackageVersion Include="MailKit" Version="4.13.0" />
+		<PackageVersion Include="Microsoft.ApplicationInsights.WorkerService" Version="2.23.0" />
+		<PackageVersion Include="Microsoft.Azure.Functions.Worker" Version="2.0.0" />
+		<PackageVersion Include="Microsoft.Azure.Functions.Worker.ApplicationInsights" Version="2.0.0" />
+		<PackageVersion Include="Microsoft.Azure.Functions.Worker.Extensions.DurableTask" Version="1.5.0" />
+		<PackageVersion Include="Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore" Version="2.0.2" />
+		<PackageVersion Include="Microsoft.Azure.Functions.Worker.Sdk" Version="2.0.5" />
+		<PackageVersion Include="Microsoft.Azure.WebJobs.Extensions.DurableTask" Version="3.3.0" />
+	</ItemGroup>
+
+	<!-- Testing -->
+	<ItemGroup>
+		<PackageVersion Include="coverlet.msbuild" Version="6.0.4">
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+			<PrivateAssets>all</PrivateAssets>
+		</PackageVersion>
+		<PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />
+		<PackageVersion Include="Microsoft.EntityFrameworkCore.InMemory" Version="9.0.7" />
+		<PackageVersion Include="Moq" Version="4.20.72" />
+		<PackageVersion Include="Shouldly" Version="4.3.0" />
+		<PackageVersion Include="FluentAssertions" Version="8.5.0" />
+		<PackageVersion Include="coverlet.collector" Version="6.0.4">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageVersion>
+		<PackageVersion Include="xunit" Version="2.9.3" />
+		<PackageVersion Include="xunit.runner.visualstudio" Version="3.1.3">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageVersion>
+		<PackageVersion Include="ReportGenerator" Version="5.4.9" />
+	</ItemGroup>
+</Project>

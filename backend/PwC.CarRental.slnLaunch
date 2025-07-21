@@ -1,0 +1,16 @@
+[
+  {
+    "Name": "API+Function",
+    "Projects": [
+      {
+        "Path": "src\\PwC.CarRental.Api\\PwC.CarRental.Api.csproj",
+        "Action": "Start",
+        "DebugTarget": "https"
+      },
+      {
+        "Path": "src\\PwC.CarRental.EmailFunction\\PwC.CarRental.EmailFunction.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

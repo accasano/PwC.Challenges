@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  db:
+    container_name: mssql
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      SA_PASSWORD: "P@ssword"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+  mail:
+    container_name: greenmail
+    image: greenmail/standalone
+    ports:
+      - "3143:3143"
+      - "8080:8080"
+      - "3025:3025"
+    restart: unless-stopped

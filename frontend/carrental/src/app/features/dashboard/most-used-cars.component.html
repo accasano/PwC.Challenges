@@ -1,0 +1,30 @@
+<div class="card">
+  <div class="card-header">
+    {{ title }}
+  </div>
+  <div class="card-body">
+    <table class="table mx-auto">
+      <thead>
+        <tr>
+          <th>Ranking</th>
+          <th>Model</th>
+          <th>Rental Count</th>
+          <th>Total Rental Days</th>
+          <th>Utilization (%)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of rows">
+          <td>{{ item.ranking }}</td>
+          <td>{{ item.model }}</td>
+          <td>{{ item.rentalCount }}</td>
+          <td>{{ item.totalRentalDays }}</td>
+          <td>{{ item.utilizationPercentage }}</td>
+        </tr>
+        <tr *ngIf="rows.length === 0">
+          <td colspan="5" class="text-center">No data available</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
